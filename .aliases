@@ -37,3 +37,5 @@ alias gdqa="git diff origin/qa --name-only | grep -v '^dist/' | xargs git diff o
 alias vim="sv"
 
 alias dotfiles="cd ~/dotfiles"
+alias sourcebashrc="source ~/.bashrc"
+
