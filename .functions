@@ -1,0 +1,4 @@
+#.functions
+
+# The sv function opens customized screen tabs 
+sv() { [[ -d $1 ]] && cd $1 || screen -t $1 vim $*; }

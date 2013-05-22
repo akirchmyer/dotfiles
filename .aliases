@@ -1,0 +1,61 @@
+# .aliases
+
+
+#git aliases
+alias gd="git diff -U50 --color"
+
+#navigation aliases
+alias nbr="cd ~/repos/news-break-app"
+alias repos="cd ~/repos"
+alias Portal="cd ~/repos/Portal"
+alias Ux="cd ~/repos/Ux"
+alias client_config="cd ~/repos/client_config"
+alias cluster_config="cd ~/repos/cluster_config"
+alias site_config="cd ~/repos/site_config"
+alias includes="cd ~/repos/includes"
+alias unittests="cd ~/repos/unittests"
+alias Client="cd ~/repos/Client"
+alias badger="cd ~/repos/badger/badger"
+alias zipper="cd ~/repos/zipper"
+alias home="cd ~"
+alias News="cd ~/News"
+alias news="cd ~/News"
+alias list="ls -la"
+
+alias kirchspace="ssh root@50.56.69.120"
+alias apps="ssh 10.250.25.64"
+
+alias cache_update="vim ~/repos/cluster_config/traits/opal/Synacor/Cache.php"
+
+#project specific aliases
+alias cbt_merge="git bulk -i cbt fetch cd && git bulk -i cbt merge cd/cbt"
+alias messaging_ci="git bulk checkout live && git bulk -i ci checkout messaging_ci && git bulk pull"
+alias smiling_web="git bulk -i ci checkout messaging_ci && git bulk -i smiling-web checkout smiling-web && git bulk pull"
+
+#git shortcuts
+alias gp="git pull"
+alias gm="git merge"
+alias ga="git add"
+alias gco="git checkout"
+alias gb="git branch"
+alias gs="git status -sb"
+alias gbd="git branch -D"
+alias fcin="finem -a-commit origin/ci -noop"
+alias fci="finem -a-commit origin/ci"
+alias fqan="finem -a-commit origin/qa -noop"
+alias fqa="finem -a-commit origin/qa"
+
+#exclude dist files from diff
+alias gdn="git diff --name-only | grep -v '^dist/' "
+alias gdncs="git diff --name-only | grep -v '^dist/' | xargs -n1 cs"
+alias gdnqa="git diff --name-only origin/ci | grep -v '^dist/' "
+alias gdci="git diff origin/ci --name-only | grep -v '^dist/' | xargs -n1 cs"
+alias gdnci="git diff --name-only origin/ci | grep -v '^dist/' "
+alias gdncics="git diff origin/ci --name-only | grep -v '^dist/' | xargs -n1 cs"
+alias gdnqa="git diff --name-only origin/qa | grep -v '^dist/' "
+alias gdnqacs="git diff origin/qa --name-only | grep -v '^dist/' | xargs -n1 cs"
+alias gdci="git diff origin/ci --name-only | grep -v '^dist/' | xargs git diff origin/ci"
+alias gdqa="git diff origin/qa --name-only | grep -v '^dist/' | xargs git diff origin/qa"
+
+# run sv instead of vim to open screen tabs
+alias vim="sv"
