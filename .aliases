@@ -7,30 +7,6 @@ alias gd="git diff -U50 --color"
 #navigation aliases
 alias nbr="cd ~/repos/news-break-app"
 alias repos="cd ~/repos"
-alias Portal="cd ~/repos/Portal"
-alias Ux="cd ~/repos/Ux"
-alias client_config="cd ~/repos/client_config"
-alias cluster_config="cd ~/repos/cluster_config"
-alias site_config="cd ~/repos/site_config"
-alias includes="cd ~/repos/includes"
-alias unittests="cd ~/repos/unittests"
-alias Client="cd ~/repos/Client"
-alias badger="cd ~/repos/badger/badger"
-alias zipper="cd ~/repos/zipper"
-alias home="cd ~"
-alias News="cd ~/News"
-alias news="cd ~/News"
-alias list="ls -la"
-
-alias kirchspace="ssh root@50.56.69.120"
-alias apps="ssh 10.250.25.64"
-
-alias cache_update="vim ~/repos/cluster_config/traits/opal/Synacor/Cache.php"
-
-#project specific aliases
-alias cbt_merge="git bulk -i cbt fetch cd && git bulk -i cbt merge cd/cbt"
-alias messaging_ci="git bulk checkout live && git bulk -i ci checkout messaging_ci && git bulk pull"
-alias smiling_web="git bulk -i ci checkout messaging_ci && git bulk -i smiling-web checkout smiling-web && git bulk pull"
 
 #git shortcuts
 alias gp="git pull"
