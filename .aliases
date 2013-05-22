@@ -35,3 +35,5 @@ alias gdqa="git diff origin/qa --name-only | grep -v '^dist/' | xargs git diff o
 
 # run sv instead of vim to open screen tabs
 alias vim="sv"
+
+alias dotfiles="cd ~/dotfiles"
