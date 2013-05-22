@@ -1,3 +1,3 @@
 dotfiles
 ========
-my personal git dotfiles
+my personal dotfiles
