@@ -23,9 +23,6 @@ nnoremap <F9> :%s/\s*$//<CR>
 " save as sudo user
 cmap w!! w !sudo dd of=%
 
-" run jshint plugin for jshint files
-au BufWritePost *.js :JSHint
-
 
 " from paul irish dotfiles
 set title
