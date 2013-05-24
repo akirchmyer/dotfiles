@@ -26,3 +26,19 @@ cmap w!! w !sudo dd of=%
 " run jshint plugin for jshint files
 au BufWritePost *.js :JSHint
 
+
+" from paul irish dotfiles
+set title
+set noerrorbells
+set visualbell
+set relativenumber " Use relative line numbers. Current line is still in status bar.
+set cursorline
+
+" Highlight the cursorline, rather than use an underline (can't see underscores with underline)
+hi CursorLine term=bold cterm=bold guibg=Grey40
+
+" Remap :W to :w
+command W w
+
+" JSON
+au BufRead,BufNewFile *.json set ft=json syntax=javascript

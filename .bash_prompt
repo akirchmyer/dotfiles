@@ -60,15 +60,4 @@ function usernamehost() {
 # Put the penultimate and current directory
 # in the iterm tab
 # \[\e]1;\]$(basename $(dirname $PWD))/\W\[\a\]
-
 PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]${BOLD}\$(usernamehost)\[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
-
-
-
-
-# These are my specific preferences
-
-# change the ls output color *AK*
-export LS_COLORS='di=01;36'
-# vim-like tab auto-completion
-bind '"\C-i" menu-complete'

@@ -1,0 +1,9 @@
+# change the ls output color *AK*
+export LS_COLORS='di=01;36'
+
+# User specific environment and startup programs
+PATH=$PATH:$HOME/bin
+export PATH
+
+# Make some commands not show up in history
+export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"

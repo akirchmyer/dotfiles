@@ -38,4 +38,6 @@ alias vim="sv"
 
 alias dotfiles="cd ~/dotfiles"
 alias sourcebashrc="source ~/.bashrc"
-
+alias lls="ls -la"
+alias lss="ls -la"
+alias lll="ll -la"
