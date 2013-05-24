@@ -1,3 +1,5 @@
+# Make vim the default editor
+export EDITOR="vim"
 # change the ls output color *AK*
 export LS_COLORS='di=01;36'
 
