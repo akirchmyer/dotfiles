@@ -6,6 +6,7 @@ alias gd="git diff -U50 --color"
 
 #navigation aliases
 alias nbr="cd ~/repos/news-break-app"
+alias rss="cd ~/repos/rss"
 alias repos="cd ~/repos"
 
 #git shortcuts
