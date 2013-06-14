@@ -39,3 +39,21 @@ command W w
 
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
+
+" pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+" ########### pathogen plugins #############
+" Install these plugins by cloning their repos into ~/.vim/bundle
+
+" vim-gitgutter
+" https://github.com/airblade/vim-gitgutter
+" shows a git diff in the 'gutter'.
+" no command necessary if installed
+
+" jshint.vim
+" https://github.com/wookiehangover/jshint.vim
+" performs jshint inline in js files
+" no command necessary if installed
