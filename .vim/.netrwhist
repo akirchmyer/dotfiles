@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/akirchmyer/repos/rdio-connect/app'
-let g:netrw_dirhist_2='/home/akirchmyer/repos/metro-toshiba-newsplace-server/htdocs/news/static/scripts/controllers'
-let g:netrw_dirhist_3='/home/akirchmyer/repos/news-break-app/grunt'
-let g:netrw_dirhist_4='/home/akirchmyer/repos/metro-toshiba-newsplace-server/htdocs/news/static/scripts/controllers'
-let g:netrw_dirhist_5='/home/akirchmyer/repos/metro-toshiba-newsplace-server/htdocs/news/static/scripts/models'
-let g:netrw_dirhist_6='/home/akirchmyer/repos/news-break-app/assets/css/less'
-let g:netrw_dirhist_7='/home/akirchmyer/repos/news-break-app/grunt'
-let g:netrw_dirhist_8='/home/akirchmyer/repos/news-break-app/app/templates/category'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/akirchmyer/cam-frontend/app'

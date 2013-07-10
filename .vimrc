@@ -42,8 +42,8 @@ au BufRead,BufNewFile *.json set ft=json syntax=javascript
 
 " pathogen
 execute pathogen#infect()
-syntax on
-filetype plugin indent on
+" syntax on
+" filetype plugin indent on
 
 " ########### pathogen plugins #############
 " Install these plugins by cloning their repos into ~/.vim/bundle
