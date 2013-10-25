@@ -3,18 +3,6 @@
 
 #navigation aliases
 alias repos="cd ~/repos"
-alias Portal="cd ~/repos/Portal"
-alias portal="cd ~/repos/Portal"
-alias Ux="cd ~/repos/Ux"
-alias News="cd ~/repos/News"
-alias news="cd ~/repos/News"
-alias ux="cd ~/repos/Ux"
-alias client_config="cd ~/repos/client_config"
-alias site_config="cd ~/repos/site_config"
-alias unittests="cd ~/repos/unittests"
-alias assets="cd ~/repos/synacor-application-fe-gen4-assets"
-alias components="cd ~/repos/synacor-application-fe-gen4-components"
-alias bhat="cd ~/repos/synacor-application-gen4-integration"
 
 #git aliases 
 alias gd="git diff -U50 --color"
@@ -35,14 +23,6 @@ alias fqa="finem -a-commit origin/qa"
 #exclude dist files from diff
 alias gdn="git diff --name-only | grep -v '^dist/' "
 alias gdncs="git diff --name-only | grep -v '^dist/' | xargs -n1 cs"
-alias gdnqa="git diff --name-only origin/ci | grep -v '^dist/' "
-alias gdci="git diff origin/ci --name-only | grep -v '^dist/' | xargs -n1 cs"
-alias gdnci="git diff --name-only origin/ci | grep -v '^dist/' "
-alias gdncics="git diff origin/ci --name-only | grep -v '^dist/' | xargs -n1 cs"
-alias gdnqa="git diff --name-only origin/qa | grep -v '^dist/' "
-alias gdnqacs="git diff origin/qa --name-only | grep -v '^dist/' | xargs -n1 cs"
-alias gdci="git diff origin/ci --name-only | grep -v '^dist/' | xargs git diff origin/ci"
-alias gdqa="git diff origin/qa --name-only | grep -v '^dist/' | xargs git diff origin/qa"
 
 # run sv instead of vim to open screen tabs
 alias vim="sv"
