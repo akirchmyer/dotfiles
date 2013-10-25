@@ -1,22 +1,32 @@
 # .aliases
 
 
-#git aliases
-alias gd="git diff -U50 --color"
-
 #navigation aliases
-alias nbr="cd ~/repos/news-break-app"
-alias rss="cd ~/repos/synacor-apps-rssreader"
 alias repos="cd ~/repos"
+alias Portal="cd ~/repos/Portal"
+alias portal="cd ~/repos/Portal"
+alias Ux="cd ~/repos/Ux"
+alias News="cd ~/repos/News"
+alias news="cd ~/repos/News"
+alias ux="cd ~/repos/Ux"
+alias client_config="cd ~/repos/client_config"
+alias site_config="cd ~/repos/site_config"
+alias unittests="cd ~/repos/unittests"
+alias assets="cd ~/repos/synacor-application-fe-gen4-assets"
+alias components="cd ~/repos/synacor-application-fe-gen4-components"
+alias bhat="cd ~/repos/synacor-application-gen4-integration"
 
-#git shortcuts
+#git aliases 
+alias gd="git diff -U50 --color"
 alias gp="git pull"
 alias gm="git merge"
 alias ga="git add"
 alias gco="git checkout"
 alias gb="git branch"
-alias gs="git status -sb"
+alias gs="git status"
 alias gbd="git branch -D"
+
+# syn aliases
 alias fcin="finem -a-commit origin/ci -noop"
 alias fci="finem -a-commit origin/ci"
 alias fqan="finem -a-commit origin/qa -noop"
@@ -37,8 +47,10 @@ alias gdqa="git diff origin/qa --name-only | grep -v '^dist/' | xargs git diff o
 # run sv instead of vim to open screen tabs
 alias vim="sv"
 
+# shell stuff
 alias dotfiles="cd ~/dotfiles"
 alias sourcebashrc="source ~/.bashrc"
 alias lls="ls -la"
 alias lss="ls -la"
 alias lll="ll -la"
+alias cp="cp -r"

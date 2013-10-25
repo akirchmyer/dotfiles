@@ -14,6 +14,7 @@ set background=dark
 set autoindent
 set smartindent
 set number
+set backspace=indent,eol,start
 
 " Clear all whitespace by hitting F9
 nnoremap <F9> :%s/\s*$//<CR>

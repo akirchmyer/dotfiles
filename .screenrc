@@ -1,7 +1,13 @@
-#change the hardstatus settings to give an window list at the bottom of the
-##screen, with the time and date and with the current window highlighted
-hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
-shelltitle "$ |bash"
+startup_message off
 defscrollback 50000
 vbell off
+
+#change the hardstatus settings to give an window list at the bottom of the                                                                        
+#screen, with the time and date and with the current window highlighted 
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
+#shelltitle "$ |bash"
+
+# turn off XON/XOFF, wow. seriously. whys it default, ick.
+defflow off
