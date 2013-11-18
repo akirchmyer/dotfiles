@@ -58,3 +58,5 @@ execute pathogen#infect()
 " https://github.com/wookiehangover/jshint.vim
 " performs jshint inline in js files
 " no command necessary if installed
+
+set re=1
