@@ -15,6 +15,7 @@ set autoindent
 set smartindent
 set number
 set backspace=indent,eol,start
+set nowrap
 
 " Clear all whitespace by hitting F9
 nnoremap <F9> :%s/\s*$//<CR>
@@ -23,40 +24,21 @@ nnoremap <F9> :%s/\s*$//<CR>
 
 " save as sudo user
 cmap w!! w !sudo dd of=%
-
-
 " from paul irish dotfiles
 set title
 set noerrorbells
 set visualbell
-set relativenumber " Use relative line numbers. Current line is still in status bar.
+"set relativenumber " Use relative line numbers. Current line is still in status bar.
 set cursorline
 
-" Highlight the cursorline, rather than use an underline (can't see underscores with underline)
+" Highlight the cursorline, rather than use an underline (can't seeunderscores with underline)
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " Remap :W to :w
 command W w
 
+command Cpm execute "set noautoindent | set nosmartindent | set nonumber"
+command Nocpm execute "set autoindent | set smartindent | set number"
+
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
-
-" pathogen
-execute pathogen#infect()
-" syntax on
-" filetype plugin indent on
-
-" ########### pathogen plugins #############
-" Install these plugins by cloning their repos into ~/.vim/bundle
-
-" vim-gitgutter
-" https://github.com/airblade/vim-gitgutter
-" shows a git diff in the 'gutter'.
-" no command necessary if installed
-
-" jshint.vim
-" https://github.com/wookiehangover/jshint.vim
-" performs jshint inline in js files
-" no command necessary if installed
-
-set re=1
